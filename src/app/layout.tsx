@@ -14,7 +14,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const siteUrl = "https://romeroarchitects.com"; // Update with your actual domain when available
+const siteUrl = "https://romarchitects.com";
 const siteName = "Romero Architects";
 const siteDescription = "We design spaces with purpose, elegance, and identity for homes and commercial spaces. Architectural Designer, Engineering Service, and Interior Design Studio based in Aruba.";
 

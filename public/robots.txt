@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location (automatically generated)
-Sitemap: https://romeroarchitects.com/sitemap.xml
+Sitemap: https://romarchitects.com/sitemap.xml
 
 # Disallow crawling of admin or private areas (if any)
 # Disallow: /admin/
