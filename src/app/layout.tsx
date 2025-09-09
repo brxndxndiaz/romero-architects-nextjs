@@ -14,9 +14,9 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const siteUrl = "https://romeroarchitects.com"; // Update with your actual domain
+const siteUrl = "https://romeroarchitects.com"; // Update with your actual domain when available
 const siteName = "Romero Architects";
-const siteDescription = "Award-winning architecture firm specializing in residential, commercial, civic, and hospitality design. We create spaces with purpose, elegance, and distinctive identity.";
+const siteDescription = "We design spaces with purpose, elegance, and identity for homes and commercial spaces. Architectural Designer, Engineering Service, and Interior Design Studio based in Aruba.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -28,20 +28,24 @@ export const metadata: Metadata = {
   keywords: [
     "architecture",
     "architects",
+    "Aruba architecture",
+    "architectural designer",
+    "engineering service",
+    "interior design studio",
     "residential design",
     "commercial architecture",
-    "civic buildings",
-    "hospitality design",
+    "home design Aruba",
+    "commercial spaces",
     "modern architecture",
     "contemporary design",
-    "architectural firm",
+    "architectural firm Aruba",
     "building design",
-    "urban planning",
-    "sustainable architecture",
     "custom homes",
     "office buildings",
-    "cultural centers",
-    "restaurants design",
+    "interior design Aruba",
+    "architectural services Caribbean",
+    "Oranjestad architects",
+    "sustainable architecture",
   ],
   authors: [{ name: "Romero Architects" }],
   creator: "Romero Architects",
@@ -69,7 +73,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@romeroarchitects", // Update with your actual Twitter handle
+    site: "@romeroarchitects", // Update with your actual Twitter handle if you have one
     creator: "@romeroarchitects",
     title: siteName,
     description: siteDescription,
@@ -102,38 +106,52 @@ export const metadata: Metadata = {
 // Structured data for the organization
 const organizationStructuredData = {
   "@context": "https://schema.org",
-  "@type": "ArchitecturalService",
+  "@type": ["ArchitecturalService", "ProfessionalService", "LocalBusiness"],
   name: siteName,
+  alternateName: "Romero Architects Aruba",
   description: siteDescription,
   url: siteUrl,
   logo: `${siteUrl}/white/4.png`,
   image: `${siteUrl}/og-image.jpg`,
-  telephone: "+1-XXX-XXX-XXXX", // Update with your phone number
-  email: "info@romeroarchitects.com", // Update with your email
+  telephone: "+297 560 5563",
+  email: "Info@romeroarchitects.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Your Street Address", // Update with your address
-    addressLocality: "Your City",
-    addressRegion: "Your State",
-    postalCode: "Your ZIP",
-    addressCountry: "US",
+    streetAddress: "Morgenster 7",
+    addressLocality: "Oranjestad",
+    addressRegion: "Aruba",
+    addressCountry: "AW",
   },
-  areaServed: {
-    "@type": "Place",
-    name: "United States", // Update based on your service area
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "12.5211", // Oranjestad coordinates
+    longitude: "-70.0362"
   },
+  areaServed: [
+    {
+      "@type": "Place",
+      name: "Aruba",
+    },
+    {
+      "@type": "Place", 
+      name: "Caribbean",
+    }
+  ],
   serviceType: [
+    "Architectural Designer",
+    "Engineering Service",
+    "Interior Design Studio",
     "Residential Architecture",
     "Commercial Architecture",
-    "Civic Architecture",
-    "Hospitality Design",
-    "Urban Planning",
-    "Interior Design",
+    "Home Design",
+    "Building Design",
+    "Space Planning",
   ],
+  priceRange: "$$",
+  openingHours: "Mo-Fr 09:00-17:00", // Update with actual hours
   sameAs: [
     "https://www.facebook.com/profile.php?id=61577381315326",
     "https://www.instagram.com/romeroarchitects",
-    // Add other social media links
   ],
 };
 
