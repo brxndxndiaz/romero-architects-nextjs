@@ -1,7 +1,5 @@
 "use client";
 import CardNav from "@/components/CardNav/CardNav";
-import Navbar from "@/components/Navbar/Navbar";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import Carousel from "@/components/Carousel/Carousel";
 import ProjectGallery from "@/components/ProjectGallery/ProjectGallery";

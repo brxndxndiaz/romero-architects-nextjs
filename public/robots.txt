@@ -1,0 +1,19 @@
+# Robots.txt for Romero Architects
+# Allow all crawlers access to all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location (you'll need to generate this)
+Sitemap: https://romeroarchitects.com/sitemap.xml
+
+# Disallow crawling of admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow crawling of static assets
+Allow: /public/
+Allow: /_next/static/
+
+# Crawl-delay (optional - remove if not needed)
+# Crawl-delay: 1
